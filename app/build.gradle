@@ -1,0 +1,45 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.0"
+    defaultConfig {
+        applicationId "com.example.administrator.getjsons"
+        minSdkVersion 15
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+android {
+    useLibrary 'org.apache.http.legacy'
+}
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile files('libs/android-async-http-1.4.8.jar')
+    compile files('libs/volley.jar')
+    compile 'com.android.support:appcompat-v7:25.0.0'
+    //RecyclerView支持包
+    compile 'com.android.support:recyclerview-v7:25.0.0'
+    compile 'com.android.support.constraint:constraint-layout:1.0.0-alpha9'
+    //okhttp访问网咯
+    compile 'com.squareup.okhttp3:okhttp:3.4.1'
+    //调用github包 实现网络获取图片可自动压缩图片
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    //第二种方法实现网络获取图片 有缓存的功能
+    compile 'com.nostra13.universalimageloader:universal-image-loader:1.9.3'
+
+    testCompile 'junit:junit:4.12'
+
+}

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/frag"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6">
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+
+        <RelativeLayout
+            android:id="@+id/shouye"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:gravity="center">
+            <ImageButton
+                android:id="@+id/image1"
+                android:background="@drawable/main_index_home_pressed"
+                android:layout_width="35dp"
+                android:layout_height="35dp" />
+            <TextView
+                android:id="@+id/text1"
+                android:textSize="10dp"
+                android:text="专题"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_below="@+id/image1"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignRight="@+id/image1"
+                android:layout_alignEnd="@+id/image1"/>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/tuangou"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:gravity="center">
+            <ImageButton
+                android:id="@+id/image2"
+                android:background="@drawable/main_index_tuan_normal"
+                android:layout_width="35dp"
+                android:layout_height="35dp" />
+            <TextView
+                android:id="@+id/text2"
+                android:text="攻略"
+                android:textSize="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_below="@+id/image2"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignRight="@+id/image2"
+                android:layout_alignEnd="@+id/image2"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/tianxian"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:gravity="center">
+            <ImageButton
+                android:id="@+id/image3"
+                android:background="@drawable/main_index_search_normal"
+                android:layout_width="35dp"
+                android:layout_height="35dp" />
+            <TextView
+                android:id="@+id/text3"
+                android:text="探险"
+                android:textSize="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_below="@+id/image3"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignRight="@+id/image3"
+                android:layout_alignEnd="@+id/image3"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/wode"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:gravity="center">
+            <ImageButton
+                android:id="@+id/image4"
+                android:background="@drawable/main_index_my_normal"
+                android:layout_width="35dp"
+                android:layout_height="35dp" />
+            <TextView
+                android:id="@+id/text4"
+                android:text="我的"
+                android:textSize="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_below="@+id/image4"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignRight="@+id/image4"
+                android:layout_alignEnd="@+id/image4"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</LinearLayout>
